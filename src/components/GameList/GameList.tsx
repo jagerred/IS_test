@@ -39,7 +39,11 @@ const GameList = () => {
 				list: !isGridList,
 			})}
 		>
-			{gamesList}
+			{filtered.length > 0 ? (
+				gamesList
+			) : (
+				<h2 className={cx('message')}>Nothing was found...</h2>
+			)}
 		</ul>
 	);
 };
