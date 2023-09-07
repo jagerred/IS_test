@@ -1,0 +1,52 @@
+@import '/src/assets/style/mixins.scss';
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 16px;
+}
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 10px;
+	flex: 0 0 30%;
+}
+.photoWrapper {
+	max-height: 300px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.title {
+	font-size: 32px;
+}
+.text {
+	font-weight: 500;
+}
+.description {
+	font-size: 20px;
+}
+
+.loader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.descriptionButton {
+	align-self: center;
+}
+
+@include laptop {
+	.info {
+		align-items: center;
+	}
+}
+@include mobile {
+	.title {
+		font-size: 24px;
+	}
+	.photoWrapper {
+		max-height: 200px;
+	}
+}

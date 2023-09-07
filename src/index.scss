@@ -1,0 +1,17 @@
+@import url('/src/assets/style/fonts.scss');
+@import '/src/assets/style/mixins.scss';
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'TTFirsNeue';
+}
+img {
+	width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	vertical-align: bottom;
+	line-height: 0;
+}
